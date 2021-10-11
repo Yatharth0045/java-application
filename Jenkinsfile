@@ -54,7 +54,7 @@ pipeline
             
         }
         success{
-            archiveArtifacts artifact: "**/*.jar"
+            archiveArtifacts artifacts: "**/*.jar"
         }
     }
 }
