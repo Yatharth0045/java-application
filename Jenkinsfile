@@ -31,6 +31,9 @@ pipeline
         
         stage("Test")
         {
+            agent{
+                label 'Testing'
+            }
             steps
             {
                 sh 'mvn test'
