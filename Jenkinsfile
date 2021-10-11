@@ -1,6 +1,8 @@
 pipeline
 {
-    agent any
+    agent {
+        label 'Development'
+    }
     tools
     {
         maven 'mvn'
@@ -20,13 +22,7 @@ pipeline
                 sh 'mvn clean'
             }
         }
-        stage("Compile")
-        {
-            steps
-            {
-                sh 'mvn compile'
-            }
-        }
+        
         stage("Test")
         {
             steps
