@@ -35,6 +35,7 @@ pipeline
     {
         always
         {
+                junit 'target/**/*.xml'
                 emailext (attachLog: true, body: '$DEFAULT_CONTENT', subject: '$DEFAULT_SUBJECT', to: 'dipayan.pramanik@knoldus.com')  
         }
     }
