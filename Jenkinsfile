@@ -48,7 +48,7 @@ pipeline
     {
         always
         {
-                emailext (attachLog: true, body: '$DEFAULT_CONTENT', subject: '$DEFAULT_SUBJECT', to: 'dipayan.pramanik@knoldus.com')  
+                emailext (attachLog: true, body: '$DEFAULT_CONTENT', subject: '$DEFAULT_SUBJECT', to: 'yatharth@leegality.com')  
         }
         success{
             archiveArtifacts artifacts: "**/*.jar"
