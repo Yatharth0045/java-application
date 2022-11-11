@@ -1,8 +1,6 @@
 pipeline
 {
-    agent {
-        label 'Development'
-    }
+    agent any
     tools
     {
         maven 'mvn'
